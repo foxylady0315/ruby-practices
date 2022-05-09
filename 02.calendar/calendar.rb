@@ -31,7 +31,6 @@ end
 def command_select_options
   opts = OptionParser.new
 
-
   select_options = {}
   
   opts.on('-y VAL') {|v| select_options[:year] = v.to_i}
