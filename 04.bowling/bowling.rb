@@ -26,12 +26,12 @@ frames.each_with_index do |frame, i|
              10 + frames[i][1] + frames[i][2]
            elsif frames[i][0] == 10 && frames[i + 1][0] == 10 && i < 8
              20 + frames[i + 2][0]
-           elsif frames[i][0] == 10 && i < 9
+           elsif frames[i][0] == 10
              10 + frames[i + 1][0] + frames[i + 1][1]
-           elsif frames[i].sum == 10 && i < 9
+           elsif frames[i].sum == 10
              frames[i].sum + frames[i + 1][0]
            else
              frame.sum
            end
 end
-p point
+puts point
